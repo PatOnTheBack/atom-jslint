@@ -12,6 +12,12 @@
   },
   "dependencies": {
     "jslint": "^0.9.5",
-    "atom-message-panel": "1.2.4"
-  }
+    "atom-message-panel": "1.2.4",
+    "snyk": "^1.184.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
